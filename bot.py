@@ -10,9 +10,7 @@ from aiogram.client.session.aiohttp import AiohttpSession
 
 # Если твой VPN поднимает локальный SOCKS5 (обычно порт 1080, 10808 или 7890)
 # Либо используем встроенную сессию с системными настройками
-session = AiohttpSession(proxy="socks5://127.0.0.1:10808")  # Укажи порт своего VPN, если знаешь
-
-bot = Bot(token=BOT_TOKEN, session=session)
+bot = Bot(token="ТВОЙ_ТОКЕН")
 dp = Dispatcher()
 
 
